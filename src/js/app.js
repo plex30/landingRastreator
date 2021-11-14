@@ -21,7 +21,7 @@ window.onload = () => {
 };
 
 const fecthDataSeguros = async () => {
-  await fetch("http://127.0.0.1:8000/seguros")
+  await fetch("https://api-rastreator.herokuapp.com/seguros")
     .then((res) => res.json())
     .then((res) => {
       setSliderOne(res);
@@ -32,7 +32,7 @@ const fecthDataSeguros = async () => {
 };
 
 const fecthDataBancos = async () => {
-  await fetch("http://127.0.0.1:8000/bancos")
+  await fetch("https://api-rastreator.herokuapp.com/bancos")
     .then((res) => res.json())
     .then((res) => {
       setSliderTwo(res);
