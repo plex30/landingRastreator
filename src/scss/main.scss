@@ -1,0 +1,222 @@
+@import './mixins';
+@import './variables';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  overflow: hidden;
+  
+}
+
+.l-service {
+  font-family: "Roboto", sans-serif;
+
+  &__icon-close{
+      position: relative;
+      color: $color-lightgray;
+      top: -3.6rem;
+      left: 10.5rem;
+      font-size: 1.4rem;
+      @include desktop {
+        top: -3.5rem;
+        left: 57.5rem;
+    }
+  }
+
+  &__message {
+    width: 200px;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    @include desktop {
+        margin-top: 2rem;
+        width: 75%;
+        font-size: 1.4rem;
+    }
+  }
+
+  &__offer {
+    background-color: $color-gray-message;
+    display: flex;
+    width: 335px;
+    height: 130px;
+    margin: auto;
+    @include desktop {
+        margin-top: -2rem;
+        width: 45%;
+        height: 200px;
+    }
+  }
+
+  &__offer-img {
+    position: relative;
+    background-color: white;
+    height:135px;
+    width:130px;
+    border-radius:50%;
+    margin-top: -0.1rem;
+    margin-left: -2rem;
+    @include desktop {
+        height:200px;
+        width:200px;
+        margin-left: -7rem;
+    }
+  }
+
+  &__logo {
+    margin-top: 2.7rem;
+    margin-left: 2.4rem;
+    width: 40px;
+    @include desktop {
+        height:100px;
+        width:100px;
+        
+    }
+  }
+
+  &__offer-text {
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    @include desktop {
+        margin-top: 1.5rem;
+        margin-left: 10rem;
+        font-size: 1.2rem;
+    }
+   
+    p {
+      margin: -0.8rem 0 1rem 1rem;
+      color: $color-gray-txt;
+    }
+    a {
+      color: $color-ocean;
+      
+    }
+    i {
+      color: $color-ocean;
+    }
+  }
+
+  &__recomendation {
+    display: flex;
+    margin: 1rem 0 1rem 1rem;
+    justify-content: space-between;
+    @include desktop {
+        
+        font-size: 1.2rem;
+    }
+  }
+
+  &__recomendation-btn {
+    margin: 0.8rem 1rem 0 1rem;
+    justify-content: flex-end;
+
+    button {
+      background-color: $color-green;
+      color: white;
+      border: none;
+      font-weight: bold;
+      padding: 0.7rem;
+      border-radius: 2px;
+      -webkit-box-shadow: 3px 14px 34px -17px rgba(0, 0, 0, 0.37);
+      -moz-box-shadow: 3px 14px 34px -17px rgba(0, 0, 0, 0.37);
+      box-shadow: 3px 14px 34px -17px rgba(0, 0, 0, 0.37);
+    }
+  }
+
+  &__slide1{
+      width: 100vw;
+    
+  }
+
+  &__footer{
+      margin-top: 2.8rem;
+      bottom: 0;
+      @include desktop {
+        margin-top: 2rem;
+        
+    }
+  }
+
+  &__img-footer{
+      margin: auto;
+      display: block;
+  }
+}
+
+
+
+.swiper {
+    width: 1000px;
+    height: 100%;
+    margin-left: 1rem;
+    @include desktop { 
+        width: 100vw;
+    }
+  }
+
+  .swiper-slide {
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid rgb(212, 212, 212);
+    height: 75px;
+    width: 80%;
+    @include desktop { 
+        height: 120px;
+    }
+  
+  }
+
+
+  .swiper-wrapper{
+      display: flex;
+     
+  }
+
+  .slider-title{
+      margin-left: 0.5rem;
+      color: #009fc7;
+      @include desktop { 
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+  }
+
+  .slider-from{
+      margin-left: 0.5rem;
+      margin-top: -0.6rem;
+      color: rgb(151, 151, 151);
+      @include desktop { 
+        margin-left: 1rem;  
+        font-size: 1rem;
+    }
+  }
+
+  .slider-price{
+       margin-left: 0.5rem;
+      color: black;
+      font-weight: bolder;
+      font-size: 0.9rem;
+      margin-top: -0.6rem;
+      @include desktop { 
+        margin-left: 1rem;  
+        font-size: 1.3rem;
+    }
+  }
+
+  hr{
+      margin: 1rem;
+      height: 1px;
+      border: 0;
+      color: #666;
+      background-color: #dddddd;
+  }
+
+
+
+
+//Media
