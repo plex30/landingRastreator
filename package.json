@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "gulp watch",
-    
+    "start": "nodemon app.js",
+    "heroku-postbuild": "gulp", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
