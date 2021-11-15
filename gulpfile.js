@@ -96,9 +96,6 @@ const browserSync = () => {
   });
 }
 
-gulp.task("heroku:production", function(){
-  console.log('hello'); 
-});
 
 exports.watch = parallel(watchFiles, browserSync);
 exports.default = series(clear, parallel(js, css));

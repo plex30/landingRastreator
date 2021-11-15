@@ -4,19 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node app.js",
-    
     
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    
-  },
-  "dependencies": {
-    "axios": "^0.24.0",
-    "swiper": "^7.2.0",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -30,5 +23,9 @@
     "gulp-uglify": "^3.0.2",
     "node": "^17.1.0",
     "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "swiper": "^7.2.0"
   }
 }
