@@ -2,9 +2,9 @@
   "name": "landingrastreator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "gulp watch",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
